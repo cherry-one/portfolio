@@ -211,6 +211,12 @@ p {
   align-items: center;
 }
 
+.study__logo {
+  background: image("imags/DreamCoding.png");
+  width: 140px;
+  height: 60px;
+}
+
 .study__description {
   margin: 0 16px;
   text-align: left;
