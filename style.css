@@ -13,7 +13,7 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-  --color-lavender: #e6e6fa;
+  --color-lavender: #f2e1fe;
 
   /* Font size */
   --font-large: 48px;
@@ -409,7 +409,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: #d9c7f0;
 }
 
 .contact__title,
@@ -431,6 +431,27 @@ p {
   transform: scale(1.1);
   color: var(--color-lavender);
   transition: all var(--animation-duration) ease-in;
+}
+
+/* Scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: var(--color-white);
+  background-color: var(--color-lavender);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
