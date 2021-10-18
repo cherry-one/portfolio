@@ -9,10 +9,10 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
-  --color-yellow: #fff7d1;
-  --color-orange: #feb546;
+  --color-yellow: #ffffea;
   --color-black: #000000;
   --color-lavender: #f2e1fe;
+  --color-light-lavender: #e4daf2;
   --color-light-puple: #d9c7f0;
 
   /* Font size */
@@ -109,7 +109,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-light-puple);
+  background-color: var(--color-light-lavender);
   padding: 8px;
 }
 
@@ -137,8 +137,8 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 22px;
-  right: 32px;
+  top: 14px;
+  right: 23px;
   font-size: 24px;
   color: var(--color-white);
   display: none;
@@ -210,7 +210,7 @@ p {
 }
 
 .major__icon:hover i {
-  color: var(--color-light-puple);
+  color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -292,7 +292,7 @@ p {
 
 .skill__value {
   height: 3px;
-  background-color: var(--color-orange);
+  background-color: var(--color-pink);
 }
 
 .skillset__right {
@@ -314,7 +314,7 @@ p {
 }
 
 .category__btn {
-  border: 1px solid var(--color-dark-white);
+  border: 1px solid var(--color-light-lavender);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
@@ -401,7 +401,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-pink);
 }
 
 .project__description h3:after {
@@ -409,9 +409,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -449,7 +449,7 @@ p {
   right: 30px;
   width: 50px;
   height: 50px;
-  font-size: 30px;
+  font-size: 25px;
   color: var(--color-white);
   background-color: var(--color-lavender);
   border-radius: 50%;
@@ -472,6 +472,11 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-light-lavender);
+  }
+
+  #navbar.navbar--dark {
+    padding: 8px;
   }
 
   .navbar__menu {
@@ -479,6 +484,10 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
