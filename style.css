@@ -5,7 +5,6 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
   --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
@@ -14,6 +13,7 @@
   --color-orange: #feb546;
   --color-black: #000000;
   --color-lavender: #f2e1fe;
+  --color-light-puple: #d9c7f0;
 
   /* Font size */
   --font-large: 48px;
@@ -109,7 +109,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: #d9c7f0;
+  background-color: var(--color-light-puple);
   padding: 8px;
 }
 
@@ -126,15 +126,13 @@ p {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
+  border: 1.2px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
-}
-
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-pink);
+  border-color: var(--color-white);
+  background-color: var(--color-light-puple);
 }
 
 .navbar__toggle-btn {
@@ -212,7 +210,7 @@ p {
 }
 
 .major__icon:hover i {
-  color: var(--color-lavender);
+  color: var(--color-light-puple);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -322,20 +320,20 @@ p {
   padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
-  color: var(--color-lavender);
+  background-color: var(--color-lavender);
+  color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
 }
 
 .category__count {
-  background-color: var(--color-orange);
+  background-color: var(--color-pink);
   border-radius: 50%;
   color: var(--color-white);
   width: 24px;
@@ -420,7 +418,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: #d9c7f0;
+  background-color: var(--color-light-puple);
 }
 
 .contact__title,
