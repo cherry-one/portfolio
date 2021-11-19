@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Chaewon's Portfolio</title>
+    <meta name="description" content="Portfolio for software engineer Chaewon"/>
+    <meta name="author" content="Chaewon"/>
+    <link rel="icon" type="image/png" href="imgs/favicon.png"/>
+    <script src="https://kit.fontawesome.com/9eb162ac0d.js" 
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
+    rel="stylesheet"/> 
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="index.html">
+                <i class="fas fa-seedling"></i>
+                <a href="index.html">Cherry</a>
+            </a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">
+                <a href="index.html">home</a>
+            </li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#work">My work</li>
+            <li class="navbar__menu__item active">
+                <a href="timeline.html">Timeline</a>
+            </li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+
+        <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+        </button>
+    </nav> 
+
+    <!-- main -->
+    <section id="timeline" class="section">
+        <div class="section__container">
+            <h1 class="timeline__title">Chaewon's study Timeline</h1>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h3 class="contact__email">joo1120_@naver.com</h3>
+        <div class="contact__links">
+            <a href="https://github.com/cherry-one" target="github">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p class="contact__rights">(Cherry) Bae Chaewon 1995.11.20</p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>

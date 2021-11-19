@@ -116,6 +116,7 @@ p {
 
 .navbar__menu {
   display: flex;
+  margin: 2px 0;
 }
 
 .navbar__logo {
@@ -423,6 +424,18 @@ p {
   transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
+}
+
+/* Timeline */
+#timeline {
+  background: url("imgs/home-background.png") center/cover no-repeat;
+  padding: 40px;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.timeline__title {
+  color: var(--color-white);
 }
 
 /* Contact */
